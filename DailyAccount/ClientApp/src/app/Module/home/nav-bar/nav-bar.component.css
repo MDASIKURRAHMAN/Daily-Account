@@ -1,0 +1,44 @@
+.mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    z-index:4; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: white;
+    background-color: rgb(33, 33, 174);
+  }
+  
+  .spacer {
+    flex-grow: 1;
+  }
+  
+  .username {
+    margin-right: 8px;
+  }
+  .logout-space {
+    margin-left: 35px;
+  }
+  .logout-text {
+   cursor: pointer;
+  }
+ .icon-text{
+    margin-top: 3px;
+ }
+.sidenav-content-context{
+  height: 80vh;
+}
+.sidenav-context{
+  margin-top: 70px;
+  width: 200px;
+  position: fixed;
+  height: 80vh;
+}
+.nav-icon{
+ display: flex;
+}
+.mat-nav-list a.active {
+  background-color: rgba(0, 0, 0, 0.1); /* Replace this with your desired background color */
+  color: white; /* Replace this with your desired text color */
+}
+

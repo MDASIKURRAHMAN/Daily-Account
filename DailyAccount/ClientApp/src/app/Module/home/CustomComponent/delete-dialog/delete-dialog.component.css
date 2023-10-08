@@ -1,0 +1,6 @@
+.dialog-actions {
+    justify-content: flex-end;
+}
+.dialog-actions button:first-child {
+    margin-right: 7px;
+}

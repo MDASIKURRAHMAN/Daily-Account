@@ -1,0 +1,50 @@
+.my-container {
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.login-box-container {
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.company-logo, .welcome-heading, .user-name, .user-profile-image, 
+.user-email, .google-login-button, .test {
+    display: flex;
+    justify-content: center;
+}
+
+.company-logo img{
+    height: 20px;
+    width: auto;
+    margin: 15px 10px;
+}
+
+.welcome-heading h3 {
+    margin: 10px 10px;
+}
+
+.user-name h2 {
+    margin-top: 20px;
+}
+
+.user-email p {
+    margin: 10px 5px;
+}
+
+.user-profile-image img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.center {
+    margin: auto;
+    width: 30px;
+}

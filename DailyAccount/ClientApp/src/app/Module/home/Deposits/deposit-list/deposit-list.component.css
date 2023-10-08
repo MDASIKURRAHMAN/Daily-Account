@@ -1,0 +1,50 @@
+.add-button {
+    float: right;
+    margin-right: 40%;
+}
+
+.centered-container {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.mat-table {
+    border: 2px blueviolet;
+    width: 100%;
+}
+
+.mat-tooltip {
+    max-width: 200px;
+    white-space: nowrap;
+}
+
+/* Set the widths of the columns */
+.mat-column-date,
+.mat-column-amount {
+    flex: 1 0 18%;
+}
+
+.mat-column-description {
+    flex: 1 0 44%;
+}
+
+.mat-column-actions {
+    flex: 1 0 20%;
+}
+
+.mat-column-description,
+.mat-header-cell.mat-column-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mat-column-amount {
+    display: flex;
+    justify-content: end;
+}
+.mat-header-cell.mat-column-amount{
+    display: flex;
+    justify-content: center;
+}

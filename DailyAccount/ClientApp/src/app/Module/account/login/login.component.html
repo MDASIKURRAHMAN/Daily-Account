@@ -1,0 +1,23 @@
+<div class="my-container">
+    <div class="login-box-container">
+        <div class="company-logo">
+            <img src="./../../../../assets/daily-account.png" alt="Daily Account Logo"/>
+        </div>
+        <div class="welcome-heading">
+            <h3>Welcome Back to Daily Account</h3>
+        </div>
+        <div class="user-name">
+            <h2> {{ userName }} </h2>
+        </div>
+        <div class="user-profile-image">
+            <img src="{{userImage}}" alt="User Profile Image" />
+        </div>
+        <div class="user-email">
+            <p> {{ userEmail }} </p>
+        </div>
+    
+        <div class="center">
+            <asl-google-signin-button shape="rectangular" logo_alignment="left" type="icon" size="large" text="signin_with"></asl-google-signin-button>
+        </div>
+    </div>
+</div>

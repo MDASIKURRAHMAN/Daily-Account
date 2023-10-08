@@ -1,0 +1,38 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Daily Account</span>
+    <span class="spacer"></span>
+    <span>{{ username }}</span>
+
+    <button mat-icon-button class="logout-space" (click)="logout();">
+      <mat-icon>exit_to_app</mat-icon>
+    </button>
+    <span class="logout-text" (click)="logout();">Log Out</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened role="navigation" class="sidenav-context">
+    <mat-nav-list>
+      <a mat-list-item [routerLink]="['/dashboard']" [class.active]="isActiveRoute('/dashboard')">
+        <mat-icon>dashboard</mat-icon>
+        Dashboard
+      </a>
+      <a mat-list-item [routerLink]="['/deposits']" [class.active]="isActiveRoute('/deposits')">
+        <mat-icon>attach_money</mat-icon>
+        Deposits
+      </a>
+      <a mat-list-item [routerLink]="['/expenses']" [class.active]="isActiveRoute('/expenses')">
+        <mat-icon>money_off</mat-icon>
+        Expenses
+      </a>
+    </mat-nav-list>    
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="sidenav-content-context">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,11 @@
+
+.form-field {
+    width: 100%; 
+} 
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+.dialog-actions button:first-child {
+    margin-right: 7px;
+}
